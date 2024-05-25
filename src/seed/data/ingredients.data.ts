@@ -1,0 +1,22 @@
+export const ingredientsList = [
+  { name: "Huevos", quantity: 3, typeMeasurements: "unidades" },
+  { name: "Harina", quantity: 100, typeMeasurements: "gramos" },
+  { name: "Queso", quantity: 500, typeMeasurements: "gramos" },
+  { name: "Nata", quantity: 200, typeMeasurements: "mililitros" },
+  { name: "Chocolate", quantity: 800, typeMeasurements: "gramos" },
+  { name: "Mantequilla", quantity: 100, typeMeasurements: "gramos" },
+  { name: "Leche", quantity: 100, typeMeasurements: "mililitros" },
+  { name: "Azúcar", quantity: 200, typeMeasurements: "gramos" },
+  { name: "Sal", quantity: 10, typeMeasurements: "gramos" },
+  { name: "Polvo de hornear", quantity: 15, typeMeasurements: "gramos" },
+  { name: "Esencia de vainilla", quantity: 10, typeMeasurements: "mililitros" },
+  { name: "Fresas", quantity: 300, typeMeasurements: "gramos" },
+  { name: "Limón", quantity: 50, typeMeasurements: "mililitros" },
+  { name: "Nueces", quantity: 100, typeMeasurements: "gramos" },
+  { name: "Zanahorias", quantity: 200, typeMeasurements: "gramos" },
+  { name: "Coco rallado", quantity: 100, typeMeasurements: "gramos" },
+  { name: "Almendras", quantity: 100, typeMeasurements: "gramos" },
+  { name: "Miel", quantity: 50, typeMeasurements: "gramos" },
+  { name: "Canela", quantity: 5, typeMeasurements: "gramos" },
+  { name: "Jengibre", quantity: 5, typeMeasurements: "gramos" }
+];
