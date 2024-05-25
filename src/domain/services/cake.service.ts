@@ -4,12 +4,13 @@ import fs from "fs";
 
 const getAllCakes = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
-    const page = req.query.page as any;
-    const limit = req.query.limit as any;
+    const page = parseInt(req.query.page as any, 10) || 1;
+    const limit = parseInt(req.query.limit as any, 10) || 10;
+    const filter = req.query.filter as string;
+    const value = req.query.value as string;
 
-    const cakes = await cakeOdm.getAllCakes(page, limit);
-
-    const totalElements = await cakeOdm.getCakeCount();
+    const cakes = await cakeOdm.getAllCakes(page, limit, filter, value);
+    const totalElements = await cakeOdm.getCakeCount(filter, value);
 
     const response = {
       totalItems: totalElements,
